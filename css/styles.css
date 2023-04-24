@@ -4,26 +4,33 @@
     box-sizing: border-box;
    
 }
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 @font-face {
     font-family: eunoia;
     src: url(../fonts/eunoia\ FREE.ttf);
 }
-
+ol, ul {
+    padding-left: 0rem;
+}
 
 body{
-    background-color: rgb(187, 184, 184);
+    background-color: rgb(255, 255, 255);
 }
 
 
 header{
+    text-align: center;
     background-color: rgb(50, 49, 49);
     height: 60px; 
-    padding-left: 30%;
-    text-align: center;
-    border-bottom: 2px solid rgba(17, 17, 17, 0.533);
-    position:relative; 
-    line-height: 60px;
+    width: 100%;
 }
 footer{
     padding-left:30%;
@@ -36,14 +43,28 @@ footer{
     color: #fff; 
 }
 
+h1.tituloBS{
+    /* display:inline-block; */
+    font-family: eunoia;
+    font-size: 40px;;
+    color: rgba(255, 255, 255, 0.971);
+    position: relative;
+    margin: auto;
+    left: -50px;
+    /* text-shadow: 2px 7px 5px rgba(1, 1, 1, 0.982), 
+        0px -4px 10px rgba(1, 1, 1, 0.39); */
+}
+
 h1.titulo{
     display:inline-block;
     font-family: eunoia;
     font-size: 40px;;
     color: rgba(255, 255, 255, 0.971);
+    text-align: center;
     /* text-shadow: 2px 7px 5px rgba(1, 1, 1, 0.982), 
         0px -4px 10px rgba(1, 1, 1, 0.39); */
 }
+
 section.presentacion{
     text-align: center;
     width: 70%;
@@ -103,20 +124,23 @@ ul.sidebar li{
     background-color: rgba(250, 235, 235, 0.225);
     list-style: none;
     text-align: center;
-   
 } 
 
-article.sec2{
-    display: flex;
-    gap: 20px;
-    overflow:scroll;
-    margin: 20px;
+#demo{
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+
 }
-article.sec2 img{
-    height: 150px;
-    width: 150px;
-    
+
+.carousel-indicators{
+    margin-bottom: 3rem;
 }
+
+
+
+
 
 p.sobre_mi{
     padding: 20px;
@@ -189,28 +213,18 @@ section.exp{
 
 .accordion{
     padding-top: 30px;
-    float:left;
-    width:100%;
     padding-bottom: 30px;
-}
+} 
 
 details > summary,details>p {
     padding: 4px;
-    width: 100%;
     background-color: #eeeeee;
     border: none;
     box-shadow: 1px 1px 2px #bbbbbb;
     cursor: pointer;
-    text-align: left;
 }
 
-.info{
-    text-align: center;
-}
 
-.info p{
-    text-align: left;
-}
 
 .contacto{
     width: 70%;
@@ -232,3 +246,96 @@ article.redes{
     font-size:100px;
     color: rgb(255, 255, 255);
 }
+
+.navbar-toggler{
+    width: 100px;
+    height: 60px;
+    float:left;
+    background-color: orange;
+}
+
+.navbar-div{
+    width: 50%;
+}
+
+.navbar{
+    width: 100%;
+    /* min-height: 100vh; */
+    float:left;
+    height: 100%;
+   
+  
+}
+
+.navbar li{
+    border: 1px dashed #fff;
+    background-color: rgba(0, 0, 0, 0.463);
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+    transition: background-color .5s;
+    transition: margin-right 0.5s;
+    transition: font-size 0.5s;
+} 
+
+.navbar li:hover{
+    background-color: orange;
+    margin-right: -10px;
+    font-size: 20px;
+}
+
+ul.navbar-nav{
+    width: 80%;
+    gap:20px;
+}
+
+img.fce{
+        padding-top:50px;
+    }
+
+.parrafo{
+    text-align: center;
+    width: 100%;
+   
+}
+
+
+article.info{
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .nav-link{
+        font-size: 8px;
+    }
+    .navbar{
+        
+        flex-direction: row;
+    }
+    .navbar-div{
+        width: 100%;
+    }
+    main.prueba{
+        flex-direction: column;
+    }
+    
+    .navbar li{
+        border: none;
+        background-color: #00000000;
+    }
+    ul.navbar-nav{
+        width: 80%;
+        gap:0px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    article.accordion{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
