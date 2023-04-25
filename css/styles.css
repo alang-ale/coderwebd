@@ -32,49 +32,42 @@ header{
     height: 60px; 
     width: 100%;
 }
-footer{
-    padding-left:30%;
-    position: relative;
-    bottom: 0;
-    height: 40px;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(50,49,49);
-    color: #fff; 
-}
 
+/* h1 nuevo */
 h1.tituloBS{
-    /* display:inline-block; */
-    font-family: eunoia;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 40px;;
     color: rgba(255, 255, 255, 0.971);
-    position: relative;
-    margin: auto;
-    left: -50px;
-    /* text-shadow: 2px 7px 5px rgba(1, 1, 1, 0.982), 
-        0px -4px 10px rgba(1, 1, 1, 0.39); */
+    padding-top: 4px;
+    text-shadow: 2px 5px 5px #9b2bbc;;
 }
+/* h1 nuevo */
 
+/* h1 viejo */
 h1.titulo{
     display:inline-block;
     font-family: eunoia;
     font-size: 40px;;
     color: rgba(255, 255, 255, 0.971);
     text-align: center;
-    /* text-shadow: 2px 7px 5px rgba(1, 1, 1, 0.982), 
-        0px -4px 10px rgba(1, 1, 1, 0.39); */
+    
 }
-
+/* h1 viejo */
 section.presentacion{
     text-align: center;
     width: 70%;
     
 }
 
-main.all{
+main{
     display:flex;
-    
+    min-height: 100vh;
 }
+
+.test2{
+    font-size: 25px;
+}
+
 img.fotocv {
     text-align: center;
     border-radius: 50%;
@@ -137,10 +130,6 @@ ul.sidebar li{
 .carousel-indicators{
     margin-bottom: 3rem;
 }
-
-
-
-
 
 p.sobre_mi{
     padding: 20px;
@@ -230,7 +219,7 @@ details > summary,details>p {
     width: 70%;
     padding: 20px;
 }
-
+/* Redes viejo */
 article.redes{
     height: 100px;
     display: flex;
@@ -246,25 +235,42 @@ article.redes{
     font-size:100px;
     color: rgb(255, 255, 255);
 }
+/* Redes viejo */
+
+/* Redes nuevo */
+div.redes{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%);
+    
+    border: 1px solid rgba(79, 77, 75, 0.734);
+    border-radius: 10px;
+    margin:0;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+div.redes i{
+    text-shadow: 2px 2px 5px #000000;;
+}
+/* Redes nuevo */
 
 .navbar-toggler{
-    width: 100px;
+    
     height: 60px;
     float:left;
     background-color: orange;
 }
 
-.navbar-div{
-    width: 50%;
+.aside-nav{
+    width: 25%;
+    min-height: 100vh;
+    float:left;
+    box-shadow: 15px 0px 0px -11px rgba(0, 0, 0, 0.304);    
 }
 
 .navbar{
-    width: 100%;
-    /* min-height: 100vh; */
-    float:left;
     height: 100%;
-   
-  
+    width: 100%;
 }
 
 .navbar li{
@@ -290,29 +296,38 @@ ul.navbar-nav{
 }
 
 img.fce{
-        padding-top:50px;
+        margin-top:30px;
     }
 
-.parrafo{
+.parrafo, .contacto{
     text-align: center;
     width: 100%;
    
 }
 
-
 article.info{
     justify-content: center;
 }
 
+footer{
+    position: relative;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(50,49,49);
+    color: #fff; 
+}
 
-
+/* nuevo */
 @media only screen and (max-width: 768px) {
     .nav-link{
         font-size: 8px;
     }
-    .navbar{
-        
+    .aside-nav{
+        width: 100%;
         flex-direction: row;
+        min-height: auto;
     }
     .navbar-div{
         width: 100%;
@@ -329,13 +344,30 @@ article.info{
         width: 80%;
         gap:0px;
     }
+    .parrafo{
+        padding-left:5%;
+        padding-right:5%;
+    }
+    div.redes{
+        width: 50%;
+        text-align: center;
+        margin-right: 25%;
+        margin-left: 25%;
+        margin-bottom: 15%;
+        
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
-    article.accordion{
-        padding-left: 50px;
-        padding-right: 50px;
+    .parrafo,.contacto{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    h1.tituloBS{
+        position: unset;
     }
 }
+
 
 
