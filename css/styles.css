@@ -143,15 +143,12 @@ p.sobre_mi{
     padding: 20px;
 }
 
-.exp{
-    padding: 30px;
-   
-}
+
 
 .exp img{
     height: 100px;
     width: 100px;
-    display: inline-block;
+    /* display: inline-block; */
     border: 1px solid rgba(79, 77, 75, 0.734);
     border-radius: 10px;
     padding: 5px;
@@ -163,16 +160,27 @@ article.exp-name{
     background-color: rgba(255, 255, 255, 0.482);
     border: 1px solid rgba(79, 77, 75, 0.734);
     border-radius: 10px;
+    display: flex;
 }
 
-p.exp-name{
-    display: inline-block;
-   font-weight: bold;
-    font-size: 30px; 
-    vertical-align: top;
-    margin-left: 10px;
-    
+.exp-div{
+    padding-left: 20px;
 }
+p.exp-name{
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: bold;
+    /* width: 50%;
+     */
+}
+
+p.exp-company{
+    
+    margin-bottom: 0;
+   
+
+}
+
 .exp a{
     font-weight: normal;
     font-size: 20px;
@@ -187,12 +195,19 @@ p.exp-name{
 .exp-desc p{
     padding:20px;
 }
+
 section.exp{
-    width: 70%;
-    border: 1px solid rgba(79, 77, 75, 0.734);
-    padding:0px;
-    margin: 20px;
-    border-radius: 10px;
+    
+    /* border: 1px solid rgba(79, 77, 75, 0.734); */
+   
+   
+    /* border-radius: 10px; */
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%;
+    border: none;
+    
 }
 
 .formacion{
@@ -307,7 +322,7 @@ img.fce{
         margin-top:30px;
     }
 
-.parrafo, .contacto{
+.parrafo, .contacto {
     text-align: center;
     width: 100%;
    
@@ -376,6 +391,34 @@ footer{
         margin-bottom: 10px;
     }
 
+    section.exp{
+        margin: 5px;
+        padding: 0;
+    }
+
+    .exp-div{
+        padding-left: 10px;
+        height: 60px;
+    }
+
+    .exp-company a{
+        font-size: 10px;
+    }
+
+    article.exp-name{
+        border: none;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .exp{
+        margin-right: 10px;
+        width: 100%;
+        border:none;
+       
+    }
 }
 
 @media only screen and (min-width: 768px) {
